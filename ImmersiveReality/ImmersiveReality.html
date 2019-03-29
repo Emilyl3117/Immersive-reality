@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Unis'to'ten Camp</title>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-look-at-component@0.5.1/dist/aframe-look-at-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-animation-component@3.2.0/dist/aframe-animation-component.min.js"></script>
+  <script src="https://etiennepinchon.github.io/aframe-rounded/lib/rounded.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@4.0.1/dist/aframe-event-set-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-particle-system-component@1.0.9/dist/aframe-particle-system-component.min.js"></script>
+
+
+</head>
+<body>
+<a-scene >
+    
+  <a-assets>
+    <img id="wetsuwetenLogo" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2Flogo_!.png?1553556546217">
+    <img id="starmailbox" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2FPicture14.png?1553551383472">
+    
+    <img id="enterence1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2FFree--prior--and-informed-consent-is-required-to-enter-Unist-ot-en-camp-.jpg?1553724948069">
+    <img id="healingcenter1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2Fconstruction_crew.jpg?1553724948190">
+    <img id="protest1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2Faction-camp-960x540.jpg?1553724948239">
+    <img id="injunction1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2FUnistoten_03-1.jpg?1553724947849">
+    <img id="rcmp1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2F_1police_raid.jpg?1553724947975">
+    <img id="moreprotest1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2Ffb_img_1543540829086_1.jpg?1553852709431">
+    
+    <img id="heart1" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2F1513313791facebook-circle-heart-love-png.png?1553758713601">
+    <img id="heart2" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2F1513313791facebook-circle-heart-love-png.png?1553758713601">
+  
+    <a-asset-item id="vancouver" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2FkitsNew.glb?1553838248263" response-type="arraybuffer"></a-asset-item>
+    <a-asset-item id="longhouse" src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2Flonghouse.glb?1553670045907" response-type="arraybuffer"></a-asset-item>
+  </a-assets>
+
+  
+
+  <!-- kits-->
+  <a-gltf-model position="0 1 0" rotation="0 90 0" src="#vancouver" scale="1 0.5 1" gltf-model="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2FkitsNew.glb?1553838248263"></a-gltf-model>
+    
+  <!--longhouse -->
+ <a-gltf-model position="-17.882 2.927 -33.612" rotation="0 -170.34035249239375 0" src="#longhouse" scale="1.019 1.7 1.37" gltf-model="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2Flonghouse.glb?1553670045907">
+  <a-plane position="-1.8 -0.014 0.046" color="b" rotation="0 90 0" scale="0.9 0.7 0" material="" geometry="">
+    <a-text value="Unis'to'ten Camp" color="red" position="-0.5 0.4 1.5" text="wrapCount:70"></a-text>
+    <a-text width="1" wrapcount="20" value="Experience what it is like to have a pipeline crossing through your neighbourhood! Use the WASD keys or a VR controller to move around. Follow the path of the red pipeline outside of this longhouse and align the      to        check out some photos taken up at the Unis’to’ten camp. " color="black" position="-0.4 0.113 1.5" text="width:0.8;wrapCount:30"></a-text>
+    <a-image src="#heart1" position="-0.3 -0.003 1.5" scale="0.05 0.05 0.05"></a-image>
+    <a-image src="#wetsuwetenLogo" position="-0.17 -0.003 1.5" scale="0.05 0.05 0.05"></a-image>
+    <a-text width="1" wrapcount="20" value="What are you waiting for? Walk through the front door and begin your adventure!" color="black" position="-0.4 -0.242 1.5" text="width:0.8;wrapCount:30" ></a-text>
+
+  </a-plane>
+  </a-gltf-model>
+  
+  
+  <a-entity scale="1.3 1.3 0.983" rotation="0 -0.115 0" position="-5.348 0 0.101">
+    
+  <!-- pipeline-->
+  <a-cylinder color="red" height="20" radius="0.4" rotation="-90 57.373 0" position="5.560 1.168 20.065"></a-cylinder>
+  <a-cylinder color="red" height="8" radius="0.4" rotation="-90 0 0" position="-2.70 1.192 10.8466"></a-cylinder>
+  <a-cylinder color="red" height="10" radius="0.4" rotation="-90 90 0" position="2.066 1.192 6.839"></a-cylinder>
+  <a-cylinder color="red" height="20" radius="0.4" rotation="-90 0 0" position="7.134 1.192 -2.953"></a-cylinder>
+  <a-cylinder color="red" height="16" radius="0.4" rotation="-90 -38.385 0" position="12.049 1.192 -19.07"></a-cylinder>
+  <a-cylinder color="red" height="20" radius="0.4" rotation="-90 19.332 0" position="13.626 1.168 -34.58"></a-cylinder>
+  <a-cylinder color="red" height="20" radius="0.4" rotation="-90 -65.319 0" position="1.361 1.192 -39.79"></a-cylinder>
+ 
+  
+  <!--checkpoint1-->
+  <a-circle id="enterence" onclick="clicked(this);" class="clickable" animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 4.17 3 -40"  
+            radius=".5" rotation="0 -51 0" position="4.17 2.5 -40" material="src: #wetsuwetenLogo">
+    <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+    <a-cylinder color="b" height="0.2" radius="0.5" rotation="-29.36 89.611 91.158" position="-0.028 -0.002 -0.15" material="" geometry="">
+      <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+    </a-cylinder>
+  </a-circle>
+    
+  <a-box id="enterencePhoto" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 4.17 3 -40"  
+            width="1.3" rotation="0 -49 0" opacity="0" position="4.17 2.5 -40" material="src: #enterence1">
+    <a-animation attribute="opacity" begin="click" dur="800" from="0" to="1"></a-animation>
+  </a-box>
+  
+    
+  <!--checkpoint2-->
+  <a-circle id="healingcenter" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 13 3 -34"  
+            radius=".5" rotation="0 -145 0" position="13 2.5 -34" material="src: #wetsuwetenLogo" >
+    <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+    <a-cylinder color="b" height="0.2" radius="0.5" rotation="-29.36 89.611 91.158" position="-0.028 -0.002 -0.15" material="" geometry="">
+      <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+    </a-cylinder>
+   </a-circle>
+    
+  <a-box id="healingcenterPhoto" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 13 3-34"  
+           width="1.3" rotation="0 -49 0" opacity="0" position="13 2.5 -34" material="src: #healingcenter1">
+    <a-animation attribute="opacity" begin="click" dur="800" from="0" to="1"></a-animation>
+  </a-box>
+    
+  <!--checkpoint3-->
+  <a-circle id="protest" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 8 3 -6.6"  
+              radius=".5" rotation="0 -180 0" position="8 2.5 -6.6" material="src: #wetsuwetenLogo">
+      <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      <a-cylinder color="b" height="0.2" radius="0.5" rotation="-29.36 89.611 91.158" position="-0.028 -0.002 -0.15" material="" geometry="">
+        <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      </a-cylinder>
+    </a-circle>
+
+    <a-box id="protestPhoto" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 8 3 -6.6"  
+              width="1.3" rotation="0 -49 0" opacity="0" position="8 2.5 -6.6" material="src: #protest1">
+      <a-animation attribute="opacity" begin="click" dur="800" from="0" to="1"></a-animation>
+    </a-box>
+  
+  <!--checkpoint4-->
+  <a-circle id="injunction" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 5 3 7.37"  
+              radius=".5" rotation="0 90 0" position="5 2.5 7.37" material="src: #wetsuwetenLogo">
+      <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      <a-cylinder color="b" height="0.2" radius="0.5" rotation="-29.36 89.611 91.158" position="-0.028 -0.002 -0.15" material="" geometry="">
+        <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      </a-cylinder>
+  </a-circle>
+
+  <a-box id="injunctionPhoto" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 5 3 7.37"  
+              width="1.3" rotation="0 -49 0" opacity="0" position="5 2.5 7.37" material="src: #injunction1">
+      <a-animation attribute="opacity" begin="click" dur="800" from="0" to="1"></a-animation>
+  </a-box>
+ 
+  <!--checkpoint5-->
+  <a-circle id="rcmp" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: -2.8 3 11.7"  
+              radius=".5" rotation="0 -180 0" position="-2.8 2.5 11.7" material="src: #wetsuwetenLogo">
+      <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      <a-cylinder color="b" height="0.2" radius="0.5" rotation="-29.36 89.611 91.158" position="-0.028 -0.002 -0.15" material="" geometry="">
+        <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      </a-cylinder>
+    </a-circle>
+
+    <a-box id="rcmpPhoto" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to:-2.8 3 11.7"  
+              width="1.3" rotation="0 -49 0" opacity="0" position="-2.8 2.5 11.7" material="src: #rcmp1">
+      <a-animation attribute="opacity" begin="click" dur="800" from="0" to="1"></a-animation>
+    </a-box>
+    
+   <!--checkpoint6-->
+   <a-circle id="moreprotest" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 10.4 3 22.8"  
+              radius=".5" rotation="0 -90 0" position="10.4 2.5 22.8" material="src: #wetsuwetenLogo" >
+      <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      <a-cylinder color="b" height="0.2" radius="0.5" rotation="-29.36 89.611 91.158" position="-0.028 -0.002 -0.15">
+        <a-animation attribute="opacity" delay="1000" begin="click" dur="800" from="1" to="0"></a-animation>
+      </a-cylinder>
+    </a-circle>
+
+    <a-box id="moreprotestPhoto" onclick="clicked(this);" class="clickable"  animation__yoyo="property: position; dir: alternate; dur: 1000; easing: easeInSine;  loop: true;  to: 10.4 3 22.8"  
+              width="1.3" rotation="0 -49 0" opacity="0" position="10.4 2.5 22.8" material="src: #moreprotest1">
+      <a-animation attribute="opacity" begin="click" dur="800" from="0" to="1"></a-animation>
+    </a-box>
+   </a-entity>
+
+<!-- Camera + Cursor -->
+<!-- code I referenced to: https://vishnuganti.com/webvr02.html -->
+  
+  <a-camera 
+     id="main-camera"
+      position="-17.854 0.7 -33.752"
+      rotation="0 -80 0"
+      look-controls="enabled: true;" 
+      wasd-controls="enabled: true;" 
+      cursor="rayOrigin: mouse;" 
+      raycaster="objects: .clickable">
+      
+    <a-entity 
+        cursor="fuse: true; fuseTimeout: 200" 
+        position="0 0 -.4" 
+        geometry="
+            primitive: circle; 
+            radiusInner: 0.0001; 
+            radiusOuter: 0.05" 
+        material="src: #heart1" 
+        scale=".05 .05 .05"
+        raycaster="
+           far: 20; 
+           interval: 600; 
+           objects: .clickable" 
+        event-set__1="
+            _event: mouseenter; 
+            material.src: #heart2"
+        event-set__2="
+            _event: mouseleave; 
+            material.src: #heart1">
+      </a-entity>
+
+    <a-circle material="src: #starmailbox ; transparent: true; opacity:1" radius=".001" position="0 -.25 -.4"> </a-circle>
+    
+</a-camera>
+    
+                                                                                                            
+  <!-- Sky -->
+  <a-sky src="https://cdn.glitch.com/f53cc466-d39c-4463-a1cf-4e4d4efba24a%2FPicture2.png?1553722146474" rotation="0 0 0"></a-sky>
+    <a-light type="ambient" color="#ddd"></a-light>
+      <a-entity light="type: directional; castShadow: true; intensity:0.1; shadowCameraVisible: false;"
+                shadow="receive: true" rotation="-90 0 0" position="0 15 0">
+      </a-entity>
+      <a-entity light="type: hemisphere; color:#fff; groundColor:#000; intensity:0.3"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.3" position="-0.5 1 1"></a-entity>
+
+    </a-scene>
+  </body>
+</html>
